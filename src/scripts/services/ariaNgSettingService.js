@@ -179,6 +179,10 @@
                 fireFirstVisitEvent();
             }
 
+            if ( ariaNgDefaultOptions.secret !== undefined && ariaNgDefaultOptions.secret.toString() !== '') {
+                options.secret = ariaNgDefaultOptions.secret;
+            }
+
             return options;
         };
 
